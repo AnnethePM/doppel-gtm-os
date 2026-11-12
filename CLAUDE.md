@@ -9,6 +9,7 @@ Doppel (https://www.doppel.com) sells an AI social engineering defense platform 
 - Research (raw, sourced, checked 2026-11-12): `context/docs/research/company.md`, `customers.md`, `competitors.md`, `market.md`, `signals.md`, `voice.md`
 - ICP (five layers, plus who is not a fit): `context/icp/icp.md`
 - Buyer personas (champion, economic buyer, influencer): `context/icp/personas.md`
+- Signal matrix (segments x personas, signals, workflow tracker): `context/icp/signal-matrix.md`
 
 ## How this folder works
 
