@@ -74,7 +74,7 @@ All ratings are INFERRED judgments based on the evidence counts in `customers.md
 | # | Type | Signal (observable event) | Mother intent (catalog) | Data source | Detection tool / Clay action | Key filters | Status |
 |---|---|---|---|---|---|---|---|
 | S1 | Universal | **New lookalike domain with a TLS certificate**, issued in the last 14 days | Niche-specific play | Certificate Transparency logs ([crt.sh](https://crt.sh), JSON output). Permutations from dnstwist | Apify dnstwist actor ([apify.com/ntriqpro/dnstwist-osint](https://apify.com/ntriqpro/dnstwist-osint)) to generate variants, then Clay HTTP to crt.sh `?q=<variant>&output=json` | Cert `not_before` within the last 14 days. Exclude domains the company owns | VERIFIED (crt.sh is an informal endpoint and may change) |
-| S2 | Universal | **The company published or updated a scam or impersonation warning** in the last 90 days | Website content mentions | Company website and help center, through Google search | SerpApi Google Search via Clay HTTP: `site:{domain} (impersonation OR scam OR "fake support")`, past 3 months [verify the SerpApi date filter] | Last 90 days. Pages titled scam, fraud, impersonation or security advisory | VERIFIED (examples: Kraken, updated 2026-10-13; LastPass, Jul 2026) |
+| S2 | Universal | **The company published or updated a scam or impersonation warning** in the last 30 days (changed from 90 days on 2026-11-12, see `output/campaigns/recent-scam-warning-crypto/workflow-spec.md`) | Website content mentions | Company website and help center, through Google search | SerpApi Google Search via Clay HTTP: `site:{domain} (impersonation OR scam OR "fake support")`, past month [verify the SerpApi date filter] | Last 30 days. Pages titled scam, fraud, impersonation or security advisory | VERIFIED (examples: Kraken, updated 2026-10-13; LastPass, Jul 2026) |
 | S3 | Universal | **Third parties running Google ads that use the brand's name** | Niche-specific play | Google Ads Transparency Center | SerpApi `google_ads_transparency_center` engine, with `text={brand}` and region US or AU ([docs](https://serpapi.com/google-ads-transparency-center-api)), via Clay HTTP | Advertiser is not the brand's own advertiser ID. Shown in the last 30 days | VERIFIED. Needs a filter for legitimate resellers and affiliates |
 | S3-Meta | Universal | Same signal, on Facebook and Instagram | Niche-specific play | Meta Ad Library API | Graph API `ads_archive` | n/a | **KILLED for US and AU.** The API returns only political and issue ads outside the EU and UK ([Graph API reference](https://developers.facebook.com/docs/graph-api/reference/ads_archive/)) |
 | S4 | Niche (A) | **A regulator publishes an alert that names the firm** as impersonated | Regulatory changes | IOSCO I-SCAN ([iosco.org/i-scan](https://www.iosco.org/i-scan/)); CIRO investor alerts ([ciro.ca](https://www.ciro.ca/node/30286)) | Clay HTTP scrape of the alert lists, matched to company names | Alert in the last 30 days, with "impersonat" in the text | VERIFIED (PARTIAL). Page structure not yet tested. ASIC (Australia) equivalent [verify] |
@@ -96,7 +96,7 @@ The tests come from `workflow-anatomy.md`: clear buying reason, enough volume, d
 | # | Signal | Clear buying reason | Enough volume | Data you can get | Natural story | Total /20 | Evidence for the buying reason |
 |---|---|---|---|---|---|---|---|
 | S1 | New lookalike domain | 4 | 4 | 4 | 5 | **17** | Advance (30-day domain takedowns), Coinbase (1000+ domains): `customers.md` |
-| S2 | Public scam warning in the last 90 days | 4 | 4 | 4 | 5 | **17** | The company has publicly admitted the problem. Example warnings: Kraken, LastPass, Topaz |
+| S2 | Public scam warning in the last 30 days | 4 | 4 | 4 | 5 | **17** | The company has publicly admitted the problem. Example warnings: Kraken, LastPass, Topaz |
 | S3 | Third-party Google ads on the brand | 4 | 3 | 4 | 4 | **15** | Unnamed financial services firm (ads using its branding): `customers.md`. Kraken says fake numbers appear "in search ads" |
 | S4 | Regulator names the firm | 5 | 2 | 3 | 5 | **15** | Regulator alerts about Topaz and IG Wealth (Matrix 1 examples) |
 | S5 | Fake app in the stores | 5 | 2 | 3 | 5 | **15** | REA (more fake apps found in two weeks than in the previous year): `customers.md` |
@@ -129,7 +129,7 @@ The tests come from `workflow-anatomy.md`: clear buying reason, enough volume, d
 | Rank | Signal | Why first |
 |---|---|---|
 | 1 | **S1 New lookalike domain** | Top score (17). Universal across all four segments. The data source is free (crt.sh). It is Doppel's most-proven pain: Advance's takedowns went from 30 days to under a week, and Coinbase took down 1000+ domains. |
-| 2 | **S2 Public scam warning in the last 90 days** | Top score (17). Universal. The company has already said publicly that it's being impersonated, so the opener writes itself. Verified examples exist in every segment. |
+| 2 | **S2 Public scam warning in the last 30 days** | Top score (17). Universal. The company has already said publicly that it's being impersonated, so the opener writes itself. Verified examples exist in every segment. |
 | 3 | **S3 Third-party Google ads on the brand** | Score 15 and universal. Backed by a case study (ads using a firm's branding). The SerpApi engine is documented. The Meta version is killed for the US and AU, so this is the only ads signal left. |
 | 4 | **S4 Regulator names the firm** (Segment A) | The clearest buying reason of any signal (5/5): a regulator has publicly confirmed the firm is being impersonated. Low volume, but it lands on Tier 1 segment A. |
 | 5 | **S5 Fake app in the stores** (Segments B, C) | Backed by REA's strongest result. Build it after the two app store endpoints are checked. |
@@ -143,7 +143,7 @@ S6 to S8 come after these, as secondary enrichments that route the narrative, no
 | W # | Status | Workflow name | Mother intent | Segments | Persona | Channel | Clay URL | Total leads |
 |---|---|---|---|---|---|---|---|---|
 | W1 | Planned | New lookalike domains | Niche-specific play (S1) | A, B, C, D | Champion | | | |
-| W2 | Planned | Recent public scam warning | Website content mentions (S2) | A, B, C, D | Champion, Influencer | | | |
+| W2 | Spec approved 2026-11-12 (B only: `recent-scam-warning-crypto`) | Recent public scam warning | Website content mentions (S2) | A, B, C, D (B first) | Champion, Economic buyer, Influencer | | | |
 | W3 | Planned | Third-party brand ads (Google) | Niche-specific play (S3) | A, B, C, D | Champion | | | |
 | W4 | Planned | Regulator impersonation alert | Regulatory changes (S4) | A | Economic buyer | | | |
 | W5 | Planned | Fake apps in the stores | Niche-specific play (S5) | B, C | Champion | | | |

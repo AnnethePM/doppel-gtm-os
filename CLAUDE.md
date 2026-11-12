@@ -6,11 +6,43 @@ Doppel (https://www.doppel.com) sells an AI social engineering defense platform 
 
 ## Key files
 
-- Research (raw, sourced, checked 2026-11-12): `context/docs/research/company.md`, `customers.md`, `competitors.md`, `market.md`, `signals.md`, `voice.md`
-- ICP (five layers, plus who is not a fit): `context/icp/icp.md`
-- Buyer personas (champion, economic buyer, influencer): `context/icp/personas.md`
-- Signal matrix (segments x personas, signals, workflow tracker): `context/icp/signal-matrix.md`
-- Outbound GTM system design (12 steps, decisions, four-pillar check): `context/docs/gtm-system.md`
+Every file in the repo, except `.claude/skills/` and `tools/`, which are listed by folder under Skills and Tools. Folders with only a `.gitkeep` are empty.
+
+**Root**
+- `CLAUDE.md`: this file
+- `README.md`: short repo overview
+- `.gitignore`: keeps `.env`, data exports, the Clay session cookie and local settings out of Git
+
+**Research** (`context/docs/research/`, raw and sourced, checked 2026-11-12)
+- `company.md`: products, pricing, partners, funding, team, leadership
+- `customers.md`: named customers, case studies, quotes
+- `competitors.md`: competitors and how each positions itself
+- `market.md`: regulation and urgency
+- `signals.md`: buying signals
+- `voice.md`: how Doppel describes itself
+
+**ICP** (`context/icp/`)
+- `icp.md`: five-layer ICP, plus who is not a fit
+- `personas.md`: champion, economic buyer, influencer
+- `signal-matrix.md`: segments x personas, signals, workflow tracker
+
+**System design** (`context/docs/`)
+- `gtm-system.md`: outbound GTM system (12 steps, decisions, four-pillar check)
+
+**Campaigns** (`output/campaigns/`)
+- `recent-scam-warning-crypto/workflow-spec.md`: Workflow 1 spec (STRUCTURE-APPROVED 2026-11-12, copy pending)
+
+**Playbooks** (`knowledge-base/playbooks/`, from the GTM Starter Kit)
+- `signal-matrix-framework.md`, `workflow-anatomy.md`: targeting and workflow method
+- `copy-frameworks.md`, `copy-iron-laws.md`, `copy-bans.yaml`, `linkedin-dm-frameworks.md`: copy rules
+- `templates/facts-template.md`: template for `context/messaging/facts.md`
+- `clay/actions-data-credits.md`, `clay/expert.md`, `clay/formulas.md`, `clay/iron-laws.md`, `clay/prompts.md`: Clay build rules
+
+**Weekly files**
+- `weekly-priorities/2026-W46.md`: this week's goals and status
+- `work-log/2026-W46.md`: this week's timestamped log
+
+**Empty, to fill:** `context/positioning/`, `context/messaging/`, `context/brand-kit/`, `knowledge-base/learnings/`, `meetings/`
 
 ## How this folder works
 
