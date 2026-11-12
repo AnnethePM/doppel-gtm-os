@@ -54,6 +54,19 @@ Source quality key: **[P]** = primary source (regulator or the original publishe
 - Gartner covers DRP inside its threat intelligence Magic Quadrant, not as its own category. Source: https://www.upguard.com/blog/digital-risk-protection-market [3P-search]
 - Total market size for DRP, HRM or social engineering defense: **Not found.** One article cites a "$12 Billion Market" for Bolster's segment, without a primary source: https://pulse2.com/bolster-shashi-prakash-profile/ [3P-search]. Do not use that figure.
 
+## User-provided framing: how regulation turns into demand (2026-11-12, UNSOURCED)
+
+The user provided this chain:
+1. Regulatory obligation: "Organisations must demonstrate that they are managing cybersecurity risks."
+2. Business requirement: "They need to protect employees, email systems, customers and sensitive information."
+3. Product demand: Email security ("Detect phishing, impersonation, malicious emails and suspicious activity.") and Security training ("Train employees to recognise phishing and social engineering attacks.")
+4. Potential purchase: "Organisations evaluate Doppel, Abnormal AI, Proofpoint, KnowBe4 and other vendors to meet their security requirements."
+
+Notes:
+- No specific regulation is named for step 1. The regulations found in this file are about fraud refunds and impersonation (FTC, UK APP, EU PSR, Australia SPF), and they point to Doppel's takedown products more than to email or training.
+- General cybersecurity-risk mandates that could fit step 1 (for example SEC cyber disclosure rules, NIS2, DORA, or training clauses in PCI DSS and HIPAA): **Not researched.** Each needs a primary source before it is used in copy.
+- Abnormal AI and Proofpoint: **Not researched** (see `competitors.md`). KnowBe4 is researched.
+
 ## Not found
 - Primary text of the EU PSR, and its application date
 - Primary Australian Treasury documents for the SPF

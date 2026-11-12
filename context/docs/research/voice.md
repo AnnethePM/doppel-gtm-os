@@ -12,6 +12,15 @@ Raw research, not conclusions. All sources checked 2026-11-12. Everything in quo
 - Bobby Ford's bio says he helps "define social engineering defense as a category." Source: https://www.doppel.com/leadership
 - Zane Lackey (a16z, an investor): "Doppel is defining the category for social engineering defense". Source: https://www.doppel.com/company/press-releases/doppel-named-fortune-cyber-60-pioneering-ai-driven-social-engineering
 
+## About page
+Source: https://www.doppel.com/company/about-us (checked 2026-11-12)
+- "Protecting the world from social engineering attacks every day" (heading)
+- "Doppel's mission is to protect the world from social engineering attacks every day."
+- "Founded in 2022, Doppel is an agentic platform designed for social engineering defense."
+- "Doppel protects individuals and brands from AI-powered impersonation, phishing, fraud, and social engineering by dismantling attacker infrastructure and building resilience through training and simulation."
+- "Backed by the best in the business" (investor section)
+- "Trusted by the world's best brands" (logo section)
+
 ## Homepage lines
 Source for all: https://www.doppel.com/
 - "Outpace AI-driven attacks. Unify Digital Risk Protection, Human Risk Management, and Email Security"

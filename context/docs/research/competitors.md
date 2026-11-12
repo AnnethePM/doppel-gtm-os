@@ -99,7 +99,8 @@ Doppel sells into three budgets (see company.md): Digital Risk Protection (DRP) 
 - INFERRED: Adaptive is the closest match to Doppel's HRM pitch (deepfake simulation and agentic email), and it claims more customers (2,000+ compared with Doppel's 300+).
 
 ## 3. Email security
-- Named Email Security rivals: **Not researched.** Doppel's releases refer only to "legacy email security vendors". Likely rivals are Abnormal, Proofpoint, Mimecast, Microsoft Defender for Office 365, Sublime and Material, but this list is INFERRED and has no source in this file.
+- The user names Abnormal AI and Proofpoint as vendors buyers evaluate alongside Doppel and KnowBe4 (user-provided, 2026-11-12). Their positioning is **Not researched.**
+- Named Email Security rivals with sources: **Not researched.** Doppel's releases refer only to "legacy email security vendors". Likely rivals are Abnormal, Proofpoint, Mimecast, Microsoft Defender for Office 365, Sublime and Material, but this list is INFERRED and has no source in this file.
 
 ## Analyst view
 - Gartner had not published a DRP-specific Magic Quadrant as of October 2026. DRP is covered inside the Magic Quadrant for Cyberthreat Intelligence Technologies (2026-05-04) and in DRP Market Guides. Source: https://www.upguard.com/blog/digital-risk-protection-market [3P-search]

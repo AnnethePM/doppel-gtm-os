@@ -67,6 +67,32 @@ Source: a table the user provided on 2026-11-12. Doppel does not publish a reven
 - Origin market: the company started out helping crypto companies fight impersonation scams. Source: https://pulse2.com/doppel-profile-kevin-tian-interview/ [3P-search]
 - Geography: AMER and APAC for Email Security GA ([P] email security GA release above). Entered Japan June 16, 2026 through a partnership with CTCSP Corporation (ITOCHU Techno-Solutions group) ([P] Japan release). EMEA expansion in October 2025, with Steve Murphy as SVP EMEA. Source: https://www.doppel.com/company/press-releases/doppel-named-fortune-cyber-60-pioneering-ai-driven-social-engineering [P]
 
+## Partner channel
+
+Source: https://doppel.com/partners/directory [P], checked 2026-11-12
+- Intro, exact: "Find a Doppel partner who can help your organization defend against modern social engineering attacks."
+- Filters on the page: partner type ("Referral Partner", "Technology Partner", "Value-Added Resellers") and coverage ("International", "National").
+- 82 partners listed. These counts are mine; the page shows no totals.
+  - By type: 75 Value-Added Resellers, 4 Referral Partners, 3 Technology Partners
+  - By coverage: 21 International, 61 National
+- **Countries are not stated.** The page doesn't say which country "National" means. The only partner with a country label is "Softchoice (CAN)".
+- Technology Partners: Google Marketplace (International), Palo Alto Networks (International), Reality Defender (National).
+- International resellers (19): 443 Technologies, AfriSpaceTech, Alacrinet, Alchemy, Arctiq, Baltin, Carahsoft, CDW, ClimbChannel, Cybrella, DoIT, EAC Technologies, GHA Associates, Megadvantage, Remitech, Softcat, Softchoice (CAN), VirtualGuardian, WWT.
+- National resellers (56), including: Optiv, GuidePoint Security, Presidio, SHI, Trace3, ePlus, Ahead, Converge Technology Solutions, Evotek, Myriad360, Novacoast, Nexum, Tevora and 43 others. The full list is on the page.
+- Referral Partners: GTS Direct, Landmark Ventures, The GTM Group, The Round Table Network (all National).
+- CTCSP Corporation (the Japan partner, see Markets) does not appear in the directory list.
+- INFERRED: with 75 resellers, the channel is a real route to market. That fits the user-provided note that pricing goes through sales or a partner (see Pricing model).
+- INFERRED, from general knowledge and not stated on the page: Softcat is UK-based, which suggests UK channel coverage, and Carahsoft is a US public-sector reseller. Verify both before using them.
+
+## About page
+
+Source: https://www.doppel.com/company/about-us [P], checked 2026-11-12
+- Mission, exact: "Doppel's mission is to protect the world from social engineering attacks every day."
+- Exact: "Founded in 2022, Doppel is an agentic platform designed for social engineering defense."
+- Exact: "Doppel protects individuals and brands from AI-powered impersonation, phishing, fraud, and social engineering by dismantling attacker infrastructure and building resilience through training and simulation."
+- Investors shown ("Backed by the best in the business"): Bessemer Venture Partners, Andreessen Horowitz, Amex Ventures, NTT DOCOMO Ventures, George Kurtz, Aurum Ventures, Strategic Cyber Ventures, 9Yards Capital, Script Capital, South Park Commons, Sozo Ventures, SV Angel, MUFG Innovation Partners. SV Angel appears nowhere else in the research. The Series C release calls the 49ers-affiliated fund "Aurum Partners".
+- Not on the page: vision, values, HQ, employee count, customer count, regions served.
+
 ## Offices
 
 - Six global hubs: San Francisco, New York, Austin, Tokyo, Toronto and London. Source: https://www.doppel.com/company/press-releases/doppel-opens-first-canadian-office-meet-demand-social-engineering-defense (2026-09-03) [P]

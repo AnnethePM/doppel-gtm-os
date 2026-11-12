@@ -35,6 +35,25 @@ Note on quotes: some testimonials were capped at about 125 characters when fetch
   - **Space and defense:** True Anomaly, Northwood Space
 - The site does not say whether every logo is a paying customer. Andreessen Horowitz is also an investor.
 
+## User-provided size profile (2026-11-12, UNSOURCED hypothesis)
+
+The user provided this table. Doppel publishes no breakdown of customers by size, so the bands and fit ratings are a working hypothesis, not a finding.
+
+| Segment | Employees | Fit (user's view) |
+|---|---|---|
+| Small business | 1–50 | Lower priority |
+| SMB | 51–200 | Possible, but less central |
+| Mid-market | 201–1,000 | Strong potential |
+| Upper mid-market | 1,001–5,000 | Strong potential |
+| Enterprise | 5,001–10,000 | Strong potential |
+| Large enterprise | 10,000+ | Strong potential |
+
+- User's summary: "Company size: 1,000+ employees, with mid-market opportunities too." Also: "Doppel primarily targets mid-market and enterprise businesses, with a strong emphasis on large enterprises and Fortune 500 companies."
+- Evidence that supports a Fortune 500 emphasis: "more than 5X increase in Fortune 500 customers" and "protects dozens of the Fortune 500" (Series C release [P], `company.md`).
+- Evidence that supports "primarily": **Not found.** The site lists "Small business, Mid-market, Enterprise" ([P] homepage). Several case-study customers look small (UniSat, Sugar23, Backpack), but their sizes are not stated.
+- The user's example customers check out as follows: Poshmark, BitGo, Ameren (named in the Japan release [P]); Coinbase (named in the Series C release and quoted [P]); Shopify, BlackRock, United Airlines (logo wall only [P]). Their employee counts are not in the research.
+- User-provided buyer titles: "CISO, Head of Information Security, VP of Security and Security Operations leaders". Only CISO appears in the research. The closest research titles are Director of Cybersecurity, Head of Cyber Defence and Head of Platform Security (see the case studies above).
+
 ## Company sizes
 - Doppel says it serves "Small business, Mid-market, Enterprise". Source: https://www.doppel.com/ [P]
 - The only case study that states a size is the unnamed financial services firm, at 500+ employees. No other case study states one.
@@ -83,7 +102,7 @@ https://www.doppel.com/customers/ark-invest
 ### Unnamed financial services firm (North America, 500+ employees) [P]
 https://www.doppel.com/customers/onboarding-doppel-broader-detection-faster-takedowns-less-manual-work
 - Products used: DRP, Brand Protection and Executive Protection. The previous provider (not named) missed threats and was slow to add sources such as TikTok.
-- Result: during the trial, Doppel "identified two malicious domains for removal within 24 hours."
+- Result: during the trial, Doppel "identified two malicious domains for removal within 24 hours." It also found bad actors buying Facebook and Google ads with the organization's branding.
 - Quotes, from an unnamed security lead:
   - "We were using a platform that was widely considered one of the best out there,"
   - "But after two or three years, it was basically the same platform."
@@ -91,6 +110,7 @@ https://www.doppel.com/customers/onboarding-doppel-broader-detection-faster-take
 
 ### Unnamed Los Angeles real estate firm [P]
 https://www.doppel.com/blog/doppel-beats-previous-vendor-with-a-40-increase-in-takedowns
+- Before Doppel: "ineffective customer support and underwhelming results" from its previous provider. The firm often found impersonations before its vendor did.
 - Takedown rate rose from 37% with the previous vendor to 76% with Doppel. Takedown speed improved "up to 5.5X". Before, takedowns took six to 20 weeks. After, they averaged 22 days on X, under 5 days on Facebook and under 15 days on TikTok.
 - The headline claims a "40% Increase in Takedowns", but the body text does not state that figure.
 - Quotes (speakers not named):

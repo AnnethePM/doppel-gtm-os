@@ -6,18 +6,32 @@ Files: `company.md`, `customers.md`, `competitors.md`, `market.md`, `signals.md`
 
 ## Summary
 
-Organizations with a well-known brand or executives that attackers can impersonate across domains, social media, ads, apps and email. The strongest evidence is in financial services, crypto and fintech, law firms, and fast-growing tech. These companies are often unhappy with an incumbent brand protection or awareness vendor. Sources: `customers.md`, `signals.md`.
+Organizations whose brand, app, community or executives are already being impersonated. They are usually in North America, in financial services or crypto, and are often unhappy with an incumbent brand protection vendor. Sources: `customers.md`, `signals.md`.
 
 ## 1. Firmographic
 
-| Attribute | Fit | Evidence |
+Segments are tiered by how much proof the research holds, not by what Doppel's site lists. Only Tier 1 should drive list building.
+
+### Segments by proof
+
+| Tier | Segment | Proof in the research | Source |
+|---|---|---|---|
+| **1. Case study plus named quote** | Investment and holding firms (asset managers, PE, family holding companies) | Advance (25x takedowns, Director of Cybersecurity), ARK Invest (98% takedown success, CTO and Brand Marketing), unnamed financial services firm (500+ employees) | `customers.md` |
+| **1. Case study plus named quote** | Crypto and web3 (exchanges, wallets, token foundations, NFT and gaming) | Coinbase (800+ social accounts and 1000+ domains taken down), Dapper Labs, UniSat; quotes from Aptos, Gala Games, CoinList, Backpack, Hashflow | `customers.md` |
+| **1. Case study plus named quote** | Consumer platforms with an app | REA Group (more fake apps found in a two-week POC than in the previous year; CISO and Head of Cyber Defence) | `customers.md` |
+| **2. Named quote, no case study read** | Tech and software (SaaS, platforms) | Notion (Head of Platform Security), Commerce (Security Analyst), AngelList (Detection and Response), Permiso (Co-CEO). Permiso's case study is listed but was not read | `customers.md` |
+| **3. Logos only** | Law firms | About 9 logos (Orrick, Cravath, WilmerHale, Covington and others); Orrick is named in the Series C release. No case study and no quote | `customers.md`, `company.md` |
+| **3. Logos only** | Healthcare, retail and consumer, real estate developers, energy and utilities, public sector, sports | Logos only; no case study and no quote | `customers.md` |
+| **Not proven** | Manufacturing, education, oil and gas | Listed on Doppel's site; no logo, case study or quote found | `company.md` |
+
+### Qualifiers
+
+| Attribute | Use it as a filter? | Evidence |
 |---|---|---|
-| Industry (strongest evidence) | Financial services (asset managers, PE/VC, banks, credit unions); crypto and fintech; law firms; technology and software | Logo wall groups and case studies (Advance, ARK Invest, REA Group, Coinbase, Dapper Labs, UniSat): `customers.md` |
-| Industry (on site; fewer proof points) | Healthcare, retail and consumer, real estate, energy and utilities, sports and media, manufacturing, education, public sector | Site industry list: `company.md`. Logo wall: `customers.md` |
-| Size | Mid-market to Fortune 500. The site also lists small business. | "Small business, Mid-market, Enterprise", "protects dozens of the Fortune 500", 5X growth in Fortune 500 customers: `company.md`. Only stated case-study size is 500+ employees: `customers.md` |
-| Geography | North America first. Also UK and EMEA, Japan, Australia (APAC) | Offices in SF, NY, Austin, Toronto, London and Tokyo; Email Security GA in AMER and APAC: `company.md`. Case studies are North American, plus REA Group in Australia: `customers.md` |
-| Brand exposure | A consumer-facing brand, app, community or token; or highly visible executives | REA (fake apps), ARK (exec impersonation), UniSat and Dapper Labs (community scams), Fortune 500 agriscience CISO ("highly visible executives"): `customers.md` |
-| Regulatory pressure | Banks and payment firms that refund victims (UK, EU); designated SPF sectors in Australia (banks, telcos, digital platforms) | `market.md`. That this drives purchases is INFERRED |
+| **Brand exposure** (the main qualifier) | Yes. The account has at least one of these: a consumer app; a public community (X, Telegram, Discord); a token or NFTs; executives who face retail investors or the public; publicly reported impersonation | REA (fake apps), UniSat (216 impersonations on X), Dapper Labs (fake NFTs), ARK (exec impersonation on LinkedIn, Instagram, WhatsApp and Telegram), Fortune 500 CISO ("highly visible executives"): `customers.md` |
+| Geography | Yes. North America first (4 of the 5 case studies), Australia second (REA Group). UK, EMEA and Japan have offices but no case study | `customers.md`, `company.md` |
+| Company size | **Working hypothesis, not proven.** Primary: 1,000+ employees. Secondary: 201–1,000. Deprioritize: under 200. These bands are user-provided with no Doppel source. What supports them: Fortune 500 emphasis ("5X increase in Fortune 500 customers", "dozens of the Fortune 500"). What doesn't: the site serves "Small business" too, and only one case study states a size (500+). Test the bands before using them as a hard filter | `customers.md` (user-provided size profile), `company.md` |
+| Regulatory pressure | Tiebreaker only. Applies to UK and EU banks that refund victims, and to Australian SPF sectors. That it drives purchases is INFERRED | `market.md` |
 
 ## 2. Technographic
 
@@ -33,21 +47,38 @@ Organizations with a well-known brand or executives that attackers can impersona
 
 ## 3. Intent signals
 
-| Signal | Strength | Evidence |
-|---|---|---|
-| KnowBe4 renewal approaching | Strong (Doppel targets it directly) | `signals.md` |
-| Unhappy with current DRP vendor (slow or failed takedowns, missed threats) | Strong (the pattern in most case studies) | `customers.md`, `signals.md` |
-| Active impersonation: fake domains, apps, social accounts, ads, or scam warnings posted by the company | Strong | `signals.md`. How to detect these is INFERRED |
-| Deepfake, vishing or helpdesk social engineering incident at the company or a peer | Medium | `signals.md` (INFERRED trigger). Gartner survey figures: `market.md` |
-| Regulatory deadline in the account's sector and region (UK APP consultation Dec 2026; Australia SPF; EU PSR) | Medium | `market.md`, `signals.md` |
-| New CISO or Head of Security or Trust & Safety; security hiring; funding round; app or token launch; new market; M&A or rebrand; big sponsorship or event | Hypothesis | All INFERRED in `signals.md`; not yet tested |
+Every signal below happened in a real case study. The "where to look" column is INFERRED (it is a method, not a research finding). No signal is ranked, because the research has no conversion data.
+
+### 3a. Visible from outside (use for list building)
+
+| Signal | Where to look (INFERRED) | Proof it matters | Source |
+|---|---|---|---|
+| Fake social accounts impersonating the brand or its executives | Search X, LinkedIn, Instagram, Telegram and WhatsApp for the brand and executive names | UniSat: 216 impersonations on X. ARK: scams on LinkedIn, Instagram, WhatsApp and Telegram. Coinbase: "over 800 social media accounts" taken down | `customers.md` |
+| Fake apps in app stores | Search the App Store and Google Play for the brand name | REA: a two-week POC found more fake apps than the previous year | `customers.md` |
+| Others buying ads with the brand's name | Meta Ad Library and Google Ads Transparency Center | Unnamed financial services firm: bad actors were buying Facebook and Google ads with its branding | `customers.md` |
+| Lookalike or malicious domains | Domain search for the brand name plus common variants | Advance: domain takedowns "would drag on for 30 days or fail entirely". Coinbase: "1000+ fraudulent domains" | `customers.md` |
+| The company publicly warns customers about scams | Its website, help center and social posts | INFERRED: a public warning means the problem is already visible to customers. No case study mentions one | `signals.md` |
+| Uses KnowBe4 | Technographic data or job posts that mention it | Doppel runs a KnowBe4 switching page: "Planning your move from KnowBe4? Start here" | `signals.md`, `voice.md` |
+| Regulated sector and region with a set date | UK and EU banks and payment firms; Australian banks, telcos and digital platforms | UK APP consultation planned for December 2026; Australian SPF designation effective 2026-05-23 | `market.md` |
+
+### 3b. Confirm on the first call (not visible from outside)
+
+| Signal | Question to ask | Proof it matters | Source |
+|---|---|---|---|
+| Slow or failed takedowns with the current vendor | "How long does a domain takedown take today?" | Advance: 30 days, then under a week after switching. LA real estate firm: six to 20 weeks before | `customers.md` |
+| The incumbent misses threats | "Who usually spots impersonations first, you or your vendor?" | LA real estate firm often found impersonations before its vendor did. REA's incumbent was "becoming less effective at active takedowns" | `customers.md` |
+| Takedowns are manual | "Who files takedowns today, and how?" | ARK: a "Whack-A-Mole" process. Advance: "manual legal cease-and-desist processes" | `customers.md` |
+| A KnowBe4 or DRP renewal is coming up | "When does your current contract renew?" | Doppel's KnowBe4 webinar is about "how to use your renewal date to plan your rollout" | `signals.md` |
+
+### Kept out of the table (untested)
+A new CISO, security hiring, a funding round, an app or token launch, entry into a new market, M&A, a rebrand, or a big sponsorship. All are INFERRED in `signals.md`, and no case study shows one of them leading to a purchase. Don't use them for scoring until tested.
 
 ## 4. Persona (detail in `personas.md`)
 
 | Role | Who | Evidence |
 |---|---|---|
 | Champion | Security operator who owns takedowns or detection (Director of Cybersecurity, Head of Cyber Defence, Head of Platform Security) | Smedberg (Advance), Dalton (REA), Pyykonen (Notion): `customers.md` |
-| Economic buyer | CISO (sometimes the CTO) | Bown (REA), anonymous Fortune 500 CISO, LA real estate firm's CISO, Keller (ARK CTO): `customers.md` |
+| Economic buyer | CISO (sometimes the CTO). User-provided, not yet in the research: Head of Information Security, VP of Security, Security Operations leaders | Bown (REA), anonymous Fortune 500 CISO, LA real estate firm's CISO, Keller (ARK CTO): `customers.md` |
 | Influencer | Legal, brand and marketing, corporate affairs, Trust & Safety, fraud | Krause (Deputy GC), Sils (COO and GC), Staudt (Brand Marketing), Farmer (Trust & Safety), REA fraud team: `customers.md` |
 
 ## 5. Engagement readiness
@@ -77,4 +108,7 @@ Sources: `customers.md`, `signals.md`.
 - Sales cycle length and buying committee size
 - ICP for Email Security and HRM buyers (no case studies for those products)
 - Whether the hypothesis triggers (new CISO, funding, launches) actually convert
-- Whether the smaller industries on the site (healthcare, energy, education, manufacturing) have real traction
+- Whether Tier 3 segments (law firms, healthcare, retail) are real buying segments or just logos. Next step: find a law firm or healthcare case study or quote
+- Whether the user-provided size bands (1,000+ primary, 201–1,000 secondary) hold. Test: look up employee counts for the named customers (Advance, ARK, REA, Coinbase, Poshmark, BitGo, Ameren) and check where they fall
+- Which regulations drive email security and training demand (the regulation-to-demand chain in `market.md` names none)
+- Whether UK, EMEA and Japan have paying customers beyond offices and partners
