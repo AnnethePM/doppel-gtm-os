@@ -10,6 +10,7 @@ Doppel (https://www.doppel.com) sells an AI social engineering defense platform 
 - ICP (five layers, plus who is not a fit): `context/icp/icp.md`
 - Buyer personas (champion, economic buyer, influencer): `context/icp/personas.md`
 - Signal matrix (segments x personas, signals, workflow tracker): `context/icp/signal-matrix.md`
+- Outbound GTM system design (12 steps, decisions, four-pillar check): `context/docs/gtm-system.md`
 
 ## How this folder works
 
