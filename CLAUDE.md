@@ -28,5 +28,18 @@ Doppel (https://www.doppel.com). One-line description to fill in after research,
 4. Ask before sending or publishing anything.
 5. Log every change in this week's work log (`work-log/YYYY-Www.md`) with a timestamp.
 
+## Skills
+
+From the GTM Starter Kit (bolaji-ships/gtm-starter-kit). Type `/` in a new session to see them.
+- Research to copy, in order: `campaign-strategy`, `signal-matrix`, `build-workflow-spec`, `campaign-copy`. Plus `miro-gtm-flowchart` to draw the system.
+- Clay builds (use `tools/rex`): `build-clay`, `prompt-builder`, `campaign-contract`, `design-clay-table-json`, `import-clay-table`, `save-clay-schema`, `calculate-costs`, `workspace-cost-audit`, `export-tables`, `campaign-qa`.
+- Research and deliverability: `crawl4ai`, `agent-browser`, `inbox-placement-test`.
+
 ## Tools
 
+- Clay: enrichment, signals and list building. Claude works in it through `tools/rex/` (unofficial SDK, your browser session; start with `GETTING_STARTED.md`).
+- n8n: workflow automation.
+- crawl4ai (`tools/crawl4ai/`) and agent-browser (`tools/agent-browser/`): web crawling and browser automation. Installed separately.
+- Miro: GTM flow charts via `miro-gtm-flowchart`. Needs the Miro MCP.
+- EmailBison and MailReach: inbox placement tests via `inbox-placement-test`.
+- To decide later: email sequencer, LinkedIn outreach tool, CRM.

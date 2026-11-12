@@ -11,3 +11,7 @@
 
 # Local Claude Code settings
 .claude/settings.local.json
+
+# Clay session cookie and local rex config
+clay-session.json
+rex-config.json
