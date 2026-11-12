@@ -2,7 +2,13 @@
 
 ## Company
 
-Doppel (https://www.doppel.com). One-line description to fill in after research, with a cited source.
+Doppel (https://www.doppel.com) sells an AI social engineering defense platform that combines Digital Risk Protection (brand and executive impersonation takedowns), Human Risk Management (simulation and training) and Email Security. Source: https://www.doppel.com/ (checked 2026-11-12), summarized in `context/docs/research/company.md`.
+
+## Key files
+
+- Research (raw, sourced, checked 2026-11-12): `context/docs/research/company.md`, `customers.md`, `competitors.md`, `market.md`, `signals.md`, `voice.md`
+- ICP (five layers, plus who is not a fit): `context/icp/icp.md`
+- Buyer personas (champion, economic buyer, influencer): `context/icp/personas.md`
 
 ## How this folder works
 
