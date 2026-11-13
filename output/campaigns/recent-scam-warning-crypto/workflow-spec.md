@@ -147,7 +147,7 @@ Copy may use only these variables. Variables use the `{{snake_case}}` format and
 | Dedupe and suppression | One entry per company per warning URL. No re-entry for 90 days unless a new warning URL appears | `gtm-system.md` Steps 1 and 6 |
 | Channel | **Both: email and LinkedIn.** Contacts without a verified email go to the LinkedIn-only track | `gtm-system.md` Steps 7 and 8 |
 | Tools | EmailBison (email) and HeyReach (LinkedIn), both proposed and pending the user's decision | `gtm-system.md` Step 8 |
-| Sequence shape | Starting cadence from `gtm-system.md` Step 8 (INFERRED, tune after baseline): Email 1 on day 1, LinkedIn connect on day 2, Email 2 on day 4, LinkedIn message on day 6 if connected, Email 3 on day 9, Email 4 on day 14 | `gtm-system.md` Step 8 |
+| Sequence shape | **3 emails and 2 LinkedIn DMs** (changed 2026-11-13 at the user's request, from 4 emails and 1 DM). Starting cadence (INFERRED, tune after baseline): Email 1 on day 1, empty LinkedIn connection request on day 2, Email 2 on day 4, DM 1 on day 6 if connected, Email 3 on day 9, DM 2 on day 11 if connected | User, 2026-11-13; `gtm-system.md` Step 8 |
 | Pre-launch | `campaign-qa` against this spec, then `inbox-placement-test`, then human approval (CLAUDE.md rule 4) | `gtm-system.md` Step 8 |
 | Send status | **Dry run.** Export the final sequence and contacts for review. Do not send | `gtm-system.md` Step 8 |
 | Feedback | Results by cell (A to E), persona and size tag go to the weekly loop (`gtm-system.md` Step 11). Angle changes are made in this spec and re-approved, never patched in the copy | `gtm-system.md` Step 11, `build-workflow-spec` rules |
