@@ -119,28 +119,77 @@ https://www.doppel.com/blog/doppel-beats-previous-vendor-with-a-40-increase-in-t
 
 ### Sugar23 (entertainment) [P]
 https://www.doppel.com/blog/how-doppels-brand-protection-ai-protects-sugar23s-team-digital-impersonation-threats
+- Problem: rising phishing, deepfakes and impersonation targeting executives, celebrities and thought leaders. (From the case study page read on 2026-11-12, added later.)
 - Over 600 impersonations of executives and partners taken down across Instagram, Twitter, Facebook and TikTok, including "over 300 takedowns on Facebook alone."
 - Quote from Evan Sils, COO (the /customer-love page says "Chief Operating Officer and General Counsel"): "Doppel's proactive approach and rapid response have been integral in maintaining the integrity and security of our brand" (excerpt)
 
 ### Dapper Labs (web3 gaming: CryptoKitties, NBA Top Shot) [P]
 https://www.doppel.com/blog/dapper-labs-leverages-doppel-safeguard-brand-integrity
+- Problem: counterfeits and phishing that threatened its brand image and partner trust. (From the case study page read on 2026-11-12, added later.)
 - 1,076 threats detected and 876 fraud instances taken down, covering over 100,000 NFTs, 133 fake social accounts, and 22 counterfeit domain and media channels.
 - Quote from Steve Krause, SVP, Deputy General Counsel: "Doppel enables us to put brand protection and anti-phishing security on autopilot."
 
 ### UniSat (Bitcoin wallet) [P]
 https://www.doppel.com/blog/no-viable-alternative-doppel-social-media-brand-protection-unisat-says
+- Problem: before Doppel, UniSat filed impersonation reports by hand on each platform, with "weeks-long rounds of communication". (From the case study page read on 2026-11-12, added later.)
 - 249 impersonations taken down. Of 289 social impersonation detections, 216 were on X.
 - Quote from Sammy, Community Manager: "To date, we have not identified any viable alternatives to Doppel."
 
-### Case studies listed but not read
-All listed on https://www.doppel.com/customers [P]
-- Galxe (index says "13,000+ threats detected")
-- M0
-- Permiso
-- An unnamed "global productivity platform" that "took millions table threat actors" (from the URL slug)
-- A CISO perspective piece, "Defending the Human Perimeter"
-- Aptos Foundation
-- Blog stories: LookRare, Magic Eden, Mysten Labs / Sui Foundation
+### Case studies read on 2026-11-13 [P]
+These were previously listed but not read. Some quotes are excerpts, marked as such.
+
+#### Galxe (web3 community growth platform)
+https://www.doppel.com/customers/galxe-secures-web3-growth-with-doppel-social-engineering-defense
+- Header labels: Industry "FINANCIAL SERVICES", Region North America, Product Brand Protection. The body calls Galxe "the leading platform for community growth and on-chain distribution in web3".
+- Size: no employee count. "millions of users globally and thousands of integrated partner brands and chains".
+- Problem: "Relying entirely on user reports meant that the support team was constantly reacting after the damage had already occurred."
+- Results: header says "13,607" alerts detected; body says "detected 13,067 alerts and taken down 405 total threats." The two alert figures disagree on the page. "a median take-down time of 40.2 hours, clocking in at 43.8 hours for social media threats and 59.76 hours for domains." "a triage time of 6 minutes."
+- Quote (unnamed, "The Galxe team"): "The support team sees it indirectly: fewer users reporting harm from fake sites."
+
+#### M0 (stablecoin infrastructure)
+https://www.doppel.com/customers/m0-scaling-securely-crypto-proactive-social-engineering-defense
+- Header labels: Industry "CRYPTO", Region EMEA, Product Brand Protection. Body: "modular stablecoin infrastructure", founded 2023.
+- Size: no employee count. The page says M0 is "raising over $100M".
+- Problem: "Identifying threats required manual effort, and takedowns could take days, leaving both users and the brand exposed."
+- Results: no metric callouts. "executing takedowns within 24 to 48 hours." "What had previously taken days became near-instant."
+- Quotes from Nicole Schaefer, Senior Marketing Manager: "Doppel transformed how we handle external threats." and "We had several questionable pages that Doppel took down the minute we were onboarded."
+
+#### Permiso (identity security)
+https://www.doppel.com/customers/how-permiso-securing-modern-attack-surface-doppel
+- Header labels: Industry "TECHNOLOGY", Region North America, Product Simulation. Size: not stated.
+- Problem: "they had strong visibility into how employees responded to phishing emails but a limited understanding of how those same employees would behave in collaboration tools"
+- Results: no figures for Permiso. "The result for Permiso was a program that better aligns with how attacks actually happen". It ran a Teams Meeting phishing simulation.
+- Quotes from Jason Martin, Co-CEO & Co-Founder: "Doppel fundamentally changed how we think about human risk." and "Attackers don't think in channels. They think in outcomes."
+
+#### Aptos Foundation (web3 blockchain)
+https://www.doppel.com/customers/aptos-foundation
+- Header labels: Industry "FINANCIAL SERVICES", Region North America, Product "Brand Protection, Executive Protection". Size: no headcount (ecosystem of "more than 330 projects").
+- Problem: "The Web3 space faces a relentless barrage of social engineering attacks that have evolved far beyond typo-riddled emails."
+- Results: no metric callouts. Quote: "In less than three days, takedowns are completed."
+- Quotes from Dudley Alan Grant, Security Lead: "I've used other services in the past. They're great for domains, but not for Telegram, not for X." and "In less than three days, takedowns are completed. That's amazing."
+
+#### Unnamed global productivity platform
+https://www.doppel.com/customers/how-productivity-platform-took-millions-table-threat-actors
+- Described as "one of the world's leading productivity platforms", "Known for unifying documents, wikis, and project management". Region North America. Products: Security Awareness Training, Simulation, Brand Protection, Executive Protection.
+- Size: no employee count. Security team grew "from two engineers to a robust team of over 50 in just four years". Serves "millions of users".
+- Problem: "The security team faced a severe and persistent 'malvertising' attack." A legacy vendor's "Takedowns would linger for weeks".
+- Results: "2,000+" takedowns; "432%" increase in detections YoY; "Reduced time-to-takedown from weeks to hours". It "took down almost all of the active malicious ads within the first day; these threats had been active for over a week under the previous provider."
+- Quotes (unnamed security lead): "we've easily cost the threat actors millions of dollars," and "Doppel is in a unique space because it has a ton of intel,"
+
+#### Unnamed global law firm (CISO story)
+https://www.doppel.com/customers/defending-human-perimeter-cisos-take-ai-social-engineering
+- Title: "Defending the Human Perimeter: A CISO's Take on AI & Social Engineering". A customer story told by the firm's unnamed CISO, not only an opinion piece. Region North America. Products: Brand Protection, Executive Protection. Size: not stated; brand built "over more than 100 years".
+- Problem: "removing PII was a rigorous, time-consuming process that placed a heavy burden on the individual lawyers." Lawyers "had to manually contact companies or social platforms to request removals."
+- Results: "The industry average for takedowns is anywhere between 30 and 45 days," "With Doppel, we're seeing takedowns in seven days," PII removal: "Today with Doppel, it could take minutes,"
+- Quotes (unnamed CISO): "Doppel does exactly what they say they do." and "A multi-channel coverage capability is equivalent to having a 12- or 18-person team" (excerpt)
+
+#### Let's F***ing Joe (decentralized exchange) [P]
+https://www.doppel.com/blog/web3-platform-uses-doppel-protect-users-malvertising-and-social-impersonation
+- Found by web search on 2026-11-13; not on the /customers listing. Category label "Customer". Described as "a popular decentralized exchange". Size: not stated.
+- Problem: the platform "could only report cyber threats after they had already led to user losses." Fraudulent Google Ads got it blacklisted across ISPs, "a problem that took days to resolve."
+- Results: "In the first six weeks of using Doppel's domain and social media protection services, Let's F***ing Joe detected and took down 50 fake domains and 59 impersonation accounts on social media." "no Let's F***ing Joe support tickets were opened by users"
+- Quote from Blue, CMO: "User safety is not just a key part of our product strategy but a fundamental aspect of our brand."
+
 
 ## Other testimonials [P]
 All from https://www.doppel.com/customer-love unless another URL is given.

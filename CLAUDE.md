@@ -20,14 +20,27 @@ Every file in the repo, except `.claude/skills/` and `tools/`, which are listed 
 - `market.md`: regulation and urgency
 - `signals.md`: buying signals
 - `voice.md`: how Doppel describes itself
+- `visual.md`: logo, colors and fonts observed in the site code (checked 2026-11-13; no public brand guide)
 
 **ICP** (`context/icp/`)
 - `icp.md`: five-layer ICP, plus who is not a fit
 - `personas.md`: champion, economic buyer, influencer
 - `signal-matrix.md`: segments x personas, signals, workflow tracker
 
-**System design** (`context/docs/`)
+**Positioning** (`context/positioning/`)
+- `value-proposition.md`: job to be done, pain, gain and proof per persona
+- `positioning.md`: category, target, alternative, unique value, proof, positioning statement
+- `competitors.md`: competitor table, where Doppel wins and loses, how to respond
+
+**Messaging** (`context/messaging/`)
+- `messaging.md`: core message, four pillars with proof, persona angles, words to use and avoid
+
+**Brand kit** (`context/brand-kit/`)
+- `brand.md`: tone of voice, key phrases and visual identity observed on the site
+
+**System design and proof** (`context/docs/`)
 - `gtm-system.md`: outbound GTM system (12 steps, decisions, four-pillar check)
+- `case-studies.md`: every customer story found (customer, size, industry, problem, result, quote, source)
 
 **Campaigns** (`output/campaigns/`)
 - `recent-scam-warning-crypto/workflow-spec.md`: Workflow 1 spec (STRUCTURE-APPROVED 2026-11-12, copy pending)
@@ -42,7 +55,7 @@ Every file in the repo, except `.claude/skills/` and `tools/`, which are listed 
 - `weekly-priorities/2026-W46.md`: this week's goals and status
 - `work-log/2026-W46.md`: this week's timestamped log
 
-**Empty, to fill:** `context/positioning/`, `context/messaging/`, `context/brand-kit/`, `knowledge-base/learnings/`, `meetings/`
+**Empty, to fill:** `knowledge-base/learnings/`, `meetings/`
 
 ## How this folder works
 
