@@ -12,6 +12,7 @@ Every file in the repo, except `.claude/skills/` and `tools/`, which are listed 
 - `CLAUDE.md`: this file
 - `README.md`: short repo overview
 - `.gitignore`: keeps `.env`, data exports, the Clay session cookie and local settings out of Git
+- `.mcp.json`: project MCP servers (Notion, `https://mcp.notion.com/mcp`); holds no credentials
 
 **Research** (`context/docs/research/`, raw and sourced, checked 2026-11-12)
 - `company.md`: products, pricing, partners, funding, team, leadership

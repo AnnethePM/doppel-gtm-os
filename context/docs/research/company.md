@@ -180,9 +180,11 @@ Founder backgrounds: the founders met as engineers at Uber. Tian previously foun
 
 ## Platform stats (self-reported, and they conflict)
 
-- "+1B" "Indicators Analyzed Daily" (homepage). The platform FAQ says "over 100M signals daily". [P]
-- "<10h" "Median Takedown Time Domains, Social Media, Paid Ads" (homepage). The platform FAQ says "Median phishing domain takedown time is under one hour". The two figures may cover different scopes. [P]
-- Simulation: "9 min" "Avg conversation time with a deepfake" and "100%" "believed the AI was human". Sample size and method: **Not found.** [P]
+Sources: homepage https://www.doppel.com/ and platform FAQ https://www.doppel.com/platform (each figure re-checked on both pages 2026-11-13).
+
+- "+1B" "Indicators Analyzed Daily" (homepage, https://www.doppel.com/). The platform FAQ says "over 100M signals daily" (https://www.doppel.com/platform). [P]
+- "<10h" "Median Takedown Time Domains, Social Media, Paid Ads" (homepage, https://www.doppel.com/). The platform FAQ says "Median phishing domain takedown time is under one hour" (https://www.doppel.com/platform). The two figures may cover different scopes. [P]
+- Simulation: "9 min" "Avg conversation time with a deepfake" and "100%" "believed the AI was human" (homepage, https://www.doppel.com/). Sample size and method: **Not found.** [P]
 
 ## Not found
 - Absolute ARR, revenue, or contract values
