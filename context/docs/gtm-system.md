@@ -2,6 +2,8 @@
 
 **Status:** design v1, 2026-11-12. This is a GTME cohort exercise built from public data. It is designed as if Doppel's team ran it. Do not send real outreach in Doppel's name: run every step up to the sequence as a dry run (see Step 8).
 
+**Flow chart:** [Doppel GTM System on Miro](https://miro.com/app/board/uXjVEOVTIaw=/) (drawn 2026-11-13 from this file; layout source: `diagrams/doppel-gtm-system.json`). If this file changes, rebuild the chart from the JSON.
+
 **Built from:** `context/icp/icp.md`, `context/icp/personas.md`, `context/icp/signal-matrix.md` and `context/docs/research/*`. Tools are taken from `CLAUDE.md`. Where `CLAUDE.md` says "to decide later", this design names a **proposed default** so every step has a tool:
 - Sequencer: **EmailBison**. It is already in the stack for inbox placement tests.
 - LinkedIn tool: **HeyReach**.

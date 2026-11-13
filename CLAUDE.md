@@ -42,6 +42,9 @@ Every file in the repo, except `.claude/skills/` and `tools/`, which are listed 
 - `gtm-system.md`: outbound GTM system (12 steps, decisions, four-pillar check)
 - `case-studies.md`: every customer story found (customer, size, industry, problem, result, quote, source)
 
+**Diagrams** (`diagrams/`)
+- `doppel-gtm-system.json`: flow chart spec of `gtm-system.md` (miro-gtm-flowchart); `.svg` and `.png` are its build. Board: https://miro.com/app/board/uXjVEOVTIaw=/
+
 **Campaigns** (`output/campaigns/`)
 - `campaign-strategy.md`: 20 outbound campaign ideas, ranked by signal strength and data ease (2026-11-13)
 - `recent-scam-warning-crypto/workflow-spec.md`: Workflow 1 spec (STRUCTURE-APPROVED 2026-11-12, copy pending)

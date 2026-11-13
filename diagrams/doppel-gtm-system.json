@@ -1,0 +1,507 @@
+{
+  "title": "Doppel: outbound GTM system, end to end",
+  "subtitle": "Design v1 for a GTME cohort exercise, built from public data. Not run by Doppel. Source: context/docs/gtm-system.md. Row 1 reads left to right, row 2 right to left, row 3 left to right.",
+  "rows": [
+    {
+      "title": "Find and qualify accounts",
+      "direction": "ltr",
+      "columns": [
+        "1A",
+        "1B",
+        "1C",
+        "1D",
+        "1E",
+        "1F",
+        "1G"
+      ]
+    },
+    {
+      "title": "Find the people and check the email",
+      "direction": "rtl",
+      "columns": [
+        [
+          "2A",
+          "2B",
+          "2C",
+          "2D"
+        ],
+        "2E",
+        "2F",
+        "2G",
+        "2H",
+        "2I",
+        "2J"
+      ]
+    },
+    {
+      "title": "Send, handle replies and learn",
+      "direction": "ltr",
+      "columns": [
+        "3A",
+        "3B",
+        "3C",
+        [
+          "o1",
+          "o2",
+          "o3",
+          "o4",
+          "o5"
+        ],
+        [
+          "a1",
+          "a2",
+          "a3",
+          "a4",
+          "a5"
+        ],
+        "3D",
+        "3E"
+      ]
+    }
+  ],
+  "nodes": {
+    "1A": {
+      "kind": "start",
+      "title": "Context OS",
+      "sub": "ICP, personas, signal matrix, research, learnings",
+      "tools": [
+        "claude_code",
+        "github"
+      ],
+      "w": 320
+    },
+    "1B": {
+      "kind": "step",
+      "title": "Buying signals",
+      "sub": [
+        "S1 new lookalike domain",
+        "S2 public scam warning",
+        "S3 Google ad on the brand name from another advertiser",
+        "S4 regulator alert",
+        "S5 app using the brand name from another developer"
+      ],
+      "tools": [
+        "n8n"
+      ],
+      "h": 440
+    },
+    "1C": {
+      "kind": "decision",
+      "title": "Own asset?"
+    },
+    "known": {
+      "kind": "exit",
+      "title": "Skip, store as known asset",
+      "below": "1C"
+    },
+    "1D": {
+      "kind": "step",
+      "title": "Find companies",
+      "sub": [
+        "Clay Find Companies",
+        "Segments A to D",
+        "HQ in the US, Canada or Australia",
+        "Refreshed monthly",
+        "Plus firms named in S4 alerts"
+      ],
+      "tools": [
+        "clay"
+      ],
+      "h": 330
+    },
+    "1E": {
+      "kind": "step",
+      "title": "Enrich",
+      "sub": [
+        "Headcount, country, segment",
+        "Brand exposure flags",
+        "S6 hiring, S7 new CISO, S8 KnowBe4"
+      ],
+      "tools": [
+        "clay"
+      ]
+    },
+    "1F": {
+      "kind": "decision",
+      "title": "ICP fit?"
+    },
+    "fail": {
+      "kind": "exit",
+      "title": "Log fail reason, or hold for review",
+      "below": "1F"
+    },
+    "1G": {
+      "kind": "step",
+      "title": "Route",
+      "sub": [
+        "Signal sets the opener",
+        "Segment sets the lead product",
+        "Matrix cell sets the angle",
+        "S4 alert: economic buyer first"
+      ],
+      "tools": [
+        "clay"
+      ],
+      "h": 330
+    },
+    "2A": {
+      "kind": "branch",
+      "title": "Investment and holding",
+      "sub": "Brand and Exec Protection"
+    },
+    "2B": {
+      "kind": "branch",
+      "title": "Crypto and web3",
+      "sub": "Brand Protection"
+    },
+    "2C": {
+      "kind": "branch",
+      "title": "Consumer apps",
+      "sub": "Fake apps"
+    },
+    "2D": {
+      "kind": "branch",
+      "title": "Tech and SaaS",
+      "sub": "Phishing domains"
+    },
+    "2E": {
+      "kind": "step",
+      "title": "Find people",
+      "sub": "Champion, economic buyer, influencer. Up to 3 per account",
+      "tools": [
+        "clay"
+      ],
+      "w": 280
+    },
+    "2F": {
+      "kind": "decision",
+      "title": "Anyone found?"
+    },
+    "park": {
+      "kind": "exit",
+      "title": "Park, retry next month",
+      "below": "2F"
+    },
+    "2G": {
+      "kind": "decision",
+      "title": "Suppressed?"
+    },
+    "supp": {
+      "kind": "exit",
+      "title": "Skip: contacted or in CRM",
+      "below": "2G"
+    },
+    "2H": {
+      "kind": "step",
+      "title": "Find and verify email",
+      "sub": "Clay waterfall plus a second verifier",
+      "tools": [
+        "clay"
+      ]
+    },
+    "2I": {
+      "kind": "decision",
+      "title": "Email valid?"
+    },
+    "li": {
+      "kind": "exit",
+      "title": "LinkedIn-only track",
+      "below": "2I"
+    },
+    "2J": {
+      "kind": "decision",
+      "title": "QA passed?"
+    },
+    "fix": {
+      "kind": "exit",
+      "title": "Fix copy or inboxes, re-test",
+      "below": "2J"
+    },
+    "3A": {
+      "kind": "decision",
+      "title": "Dry run?"
+    },
+    "export": {
+      "kind": "exit",
+      "title": "Export for review, no sending",
+      "below": "3A"
+    },
+    "3B": {
+      "kind": "step",
+      "title": "Sequence",
+      "sub": [
+        "Emails on days 1, 4, 9, 14",
+        "LinkedIn on days 2 and 6",
+        "EmailBison, HeyReach (proposed)"
+      ]
+    },
+    "3C": {
+      "kind": "step",
+      "title": "Handle replies",
+      "sub": "AI drafts the label, a human confirms",
+      "tools": [
+        "n8n",
+        "claude"
+      ]
+    },
+    "o1": {
+      "kind": "branch",
+      "title": "Positive or meeting",
+      "h": 80
+    },
+    "o2": {
+      "kind": "branch",
+      "title": "Referral",
+      "h": 80
+    },
+    "o3": {
+      "kind": "branch",
+      "title": "Objection",
+      "h": 80
+    },
+    "o4": {
+      "kind": "branch",
+      "title": "Not now",
+      "h": 80
+    },
+    "o5": {
+      "kind": "branch",
+      "title": "Unsubscribe",
+      "h": 80
+    },
+    "a1": {
+      "kind": "step",
+      "title": "Book meeting, offer 2-week POC",
+      "w": 300,
+      "h": 80
+    },
+    "a2": {
+      "kind": "step",
+      "title": "Add the new contact",
+      "w": 300,
+      "h": 80
+    },
+    "a3": {
+      "kind": "step",
+      "title": "Reply with proof, log new ones",
+      "w": 300,
+      "h": 80
+    },
+    "a4": {
+      "kind": "exit",
+      "title": "Snooze, re-enter on a new signal",
+      "w": 300,
+      "h": 80
+    },
+    "a5": {
+      "kind": "exit",
+      "title": "Do-not-contact everywhere",
+      "w": 300,
+      "h": 80
+    },
+    "3D": {
+      "kind": "step",
+      "title": "CRM",
+      "sub": "Company, contact, signal, deal (proposed)",
+      "tools": [
+        "hubspot"
+      ]
+    },
+    "3E": {
+      "kind": "start",
+      "title": "Weekly review",
+      "sub": "Results by workflow, signal, angle cell, persona and size tag",
+      "tools": [
+        "claude_code",
+        "n8n"
+      ],
+      "w": 300,
+      "align": "bottom"
+    }
+  },
+  "edges": [
+    [
+      "1A",
+      "1B"
+    ],
+    [
+      "1B",
+      "1C"
+    ],
+    [
+      "1C",
+      "1D",
+      "No"
+    ],
+    [
+      "1C",
+      "known",
+      "Yes"
+    ],
+    [
+      "1D",
+      "1E"
+    ],
+    [
+      "1E",
+      "1F"
+    ],
+    [
+      "1F",
+      "1G",
+      "Yes"
+    ],
+    [
+      "1F",
+      "fail",
+      "No"
+    ],
+    [
+      "1G",
+      "2A"
+    ],
+    [
+      "1G",
+      "2B"
+    ],
+    [
+      "1G",
+      "2C"
+    ],
+    [
+      "1G",
+      "2D"
+    ],
+    [
+      "2A",
+      "2E"
+    ],
+    [
+      "2B",
+      "2E"
+    ],
+    [
+      "2C",
+      "2E"
+    ],
+    [
+      "2D",
+      "2E"
+    ],
+    [
+      "2E",
+      "2F"
+    ],
+    [
+      "2F",
+      "2G",
+      "Yes"
+    ],
+    [
+      "2F",
+      "park",
+      "No"
+    ],
+    [
+      "2G",
+      "2H",
+      "No"
+    ],
+    [
+      "2G",
+      "supp",
+      "Yes"
+    ],
+    [
+      "2H",
+      "2I"
+    ],
+    [
+      "2I",
+      "2J",
+      "Yes"
+    ],
+    [
+      "2I",
+      "li",
+      "No"
+    ],
+    [
+      "2J",
+      "3A",
+      "Yes"
+    ],
+    [
+      "2J",
+      "fix",
+      "No"
+    ],
+    [
+      "3A",
+      "3B",
+      "No"
+    ],
+    [
+      "3A",
+      "export",
+      "Yes"
+    ],
+    [
+      "3B",
+      "3C"
+    ],
+    [
+      "3C",
+      "o1"
+    ],
+    [
+      "3C",
+      "o2"
+    ],
+    [
+      "3C",
+      "o3"
+    ],
+    [
+      "3C",
+      "o4"
+    ],
+    [
+      "3C",
+      "o5"
+    ],
+    [
+      "o1",
+      "a1"
+    ],
+    [
+      "o2",
+      "a2"
+    ],
+    [
+      "o3",
+      "a3"
+    ],
+    [
+      "o4",
+      "a4"
+    ],
+    [
+      "o5",
+      "a5"
+    ],
+    [
+      "a1",
+      "3D"
+    ],
+    [
+      "3D",
+      "3E"
+    ]
+  ],
+  "loop": {
+    "from": "3E",
+    "to": "1A",
+    "label": "Weekly loop: results update the Context OS"
+  }
+}
