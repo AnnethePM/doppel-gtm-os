@@ -54,6 +54,27 @@ The user provided this table. Doppel publishes no breakdown of customers by size
 - The user's example customers check out as follows: Poshmark, BitGo, Ameren (named in the Japan release [P]); Coinbase (named in the Series C release and quoted [P]); Shopify, BlackRock, United Airlines (logo wall only [P]). Their employee counts are not in the research.
 - User-provided buyer titles: "CISO, Head of Information Security, VP of Security and Security Operations leaders". Only CISO appears in the research. The closest research titles are Director of Cybersecurity, Head of Cyber Defence and Head of Platform Security (see the case studies above).
 
+## Employee counts of named customers (checked 2026-11-13)
+
+The test `icp.md` asked for: look up headcounts of named customers and check the user-provided size bands. All figures are from search results that summarize filings or workforce trackers; the filings themselves were not opened, so every row is [3P-search]. Trackers disagree, so the most official source found is used and the spread is noted.
+
+| Customer | Employees | As of | Source (best found) | Spread across sources | Band |
+|---|---|---|---|---|---|
+| Coinbase | 4,951 full-time | 2025-12-31 | Coinbase FY2025 10-K, as summarized by https://stockanalysis.com/stocks/coin/employees/ and https://www.marketbeat.com/instant-alerts/coinbase-global-q4-earnings-call-highlights-2026-02-12/ | Revelio estimates ~10,500 (inconsistent). About 680 laid off in 2026 (https://www.theblock.co/post/400023/coinbase-cuts-staff) | 1,000+ |
+| Ameren | 8,913 | 2025-12-31 | Ameren 2025 sustainability data, https://www.sustainabilityreports.com/ameren/2025/eei-aga-sustainability-template; also https://stockanalysis.com/stocks/aee/employees/ | 8,913 to ~9,500 | 1,000+ |
+| REA Group | 3,418 | 2025-06-30 | REA Group 2025 Modern Slavery Statement, https://modernslaveryregister.gov.au/statements/VrUkVMzTFMDf0MC/pdf | 2,244 (Revelio) to 3,418 | 1,000+ |
+| Advance (Advance Publications) | ~15,600 (estimate) | 2026-03 | https://www.reveliolabs.com/companies/advance-publications/employees (privately held, no official count) | ~12,000 (https://en.wikipedia.org/wiki/Advance_Publications) to 25,000+ in older sources | 1,000+ |
+| Poshmark | ~1,100 (estimate) | 2026-03 | https://www.reveliolabs.com/companies/poshmark/employees/ | 750 to 850 (https://builtin.com/company/poshmark), ~800 in 2022 (Wikipedia) | Borderline: 201-1,000 or 1,000+ |
+| BitGo | ~565 full-time | 2025-06-30 | BitGo S-1, as summarized by https://www.iposcoop.com/?p=36397 | ~30 in one outlier database | 201-1,000 |
+| ARK Invest | ~48 | Date not shown | SEC Form ADV data via https://www.theadvisoros.com/firms/ark-investment-management-llc-9525 | 45 to 95 (https://builtin.com/company/ark-investment-management-llc); Growjo's 245 looks inflated | Under 200 |
+
+Not looked up: the unnamed financial services firm (its case study already says 500+ employees).
+
+What it shows (INFERRED):
+- 4 of 7 named customers are clearly 1,000+ (Coinbase, Ameren, REA Group, Advance). This supports the 1,000+ primary band.
+- BitGo (about 565) and the unnamed 500+ firm sit in the 201-1,000 band, which supports it as secondary.
+- ARK Invest has fewer than 100 employees but is one of the strongest case studies ("98%" takedown success, `customers.md`). Its exposure comes from its public brand and highly visible executives, not its headcount. So "deprioritize under 200" does not hold for firms with high brand exposure.
+
 ## Company sizes
 - Doppel says it serves "Small business, Mid-market, Enterprise". Source: https://www.doppel.com/ [P]
 - The only case study that states a size is the unnamed financial services firm, at 500+ employees. No other case study states one.

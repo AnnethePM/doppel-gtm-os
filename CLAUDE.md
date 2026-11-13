@@ -99,5 +99,6 @@ From the GTM Starter Kit (bolaji-ships/gtm-starter-kit). Type `/` in a new sessi
 - n8n: workflow automation.
 - crawl4ai (`tools/crawl4ai/`) and agent-browser (`tools/agent-browser/`): web crawling and browser automation. Installed separately.
 - Miro: GTM flow charts via `miro-gtm-flowchart`. Needs the Miro MCP.
+- Notion: read-only copy of the Context OS, "Doppel Mock GTM OS": https://app.notion.com/p/417bc1132dba813eb5c5ffeb80bd0717 . Mirrors `context/` and `output/`, one page per file, except the raw research and `context/messaging/facts.md`. GitHub stays the source of truth: edit files here, then republish the changed pages. Needs the Notion MCP (`.mcp.json`).
 - EmailBison and MailReach: inbox placement tests via `inbox-placement-test`.
 - To decide later: email sequencer, LinkedIn outreach tool, CRM.
